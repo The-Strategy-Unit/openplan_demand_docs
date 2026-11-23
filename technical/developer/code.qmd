@@ -2,11 +2,15 @@
 title: "Open Code"
 ---
 
+Given the size of the project, there are numerous GitHub repositories relating to the OpenPlan hospital demand model, with this number likely to grow. This page gives an overview of the main repositories forming the backbone of the model. It is not exhaustive - if there are any queries on repositories not listed here, please [contact us](../contact.qmd). 
+
+Note that some repositories are currently set to private.
+
 ## Diagram showing repository relationships
 
 The diagram below shows the relationship between the different repositories and the data flows and architecture connecting them.
 
-[![Diagram of OpenPlan model architecture](../../../resources/NHP_model_v6.png)](../resources/NHP_model_v6.png){target="_blank" fig-alt="A diagram showing the connections between the various repositories"}
+[![Diagram of OpenPlan model architecture](../resources/NHP_model_v6.png)](../resources/NHP_model_v6.png){target="_blank" fig-alt="A diagram showing the connections between the various repositories"}
 
 ## Repositories relating to model inputs
 
@@ -67,6 +71,24 @@ This repository contains Python code for producing various products relating to 
 This is the repository hosting the content you are reading now. The aim is to provide a high level overview of the project as a whole.
 
 ## Repositories relating to supporting packages
+
+-   [nhp_aci](https://github.com/The-Strategy-Unit/nhp_aci)
+
+Python package: helpers to run the OpenPlan hospital demand model using Azure Container Instances (ACI).
+
+-   [nhp_inkit](https://github.com/The-Strategy-Unit/nhp_inkit)
+
+R package: handle and visualise inputs data for the OpenPlan hospital demand model.
+
+-   [nhp_reskit](https://github.com/The-Strategy-Unit/nhp_reskit)
+
+R package: process results from the OpenPlan hospital demand model.
+
+-   [nhp_azkit](https://github.com/The-Strategy-Unit/azkit)
+
+R package: handle Azure authentication and basic tasks with blob storage.
+
+## Open source policy
 
 -   [nhp_aci](https://github.com/The-Strategy-Unit/nhp_aci)
 

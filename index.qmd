@@ -1,4 +1,5 @@
 ---
+title: "OpenPlan hospital demand model documentation"
 order: 1
 ---
 # Welcome to the OpenPlan hospital demand model documentation site.
