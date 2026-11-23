@@ -10,7 +10,7 @@ Note that some repositories are currently set to private.
 
 The diagram below shows the relationship between the different repositories and the data flows and architecture connecting them.
 
-[![Diagram of OpenPlan model architecture](../resources/NHP_model_v6.png)](../resources/NHP_model_v6.png){target="_blank" fig-alt="A diagram showing the connections between the various repositories"}
+[![Diagram of OpenPlan model architecture](/resources/NHP_model_v6.png)]{target="_blank" fig-alt="A diagram showing the connections between the various repositories"}
 
 ## Repositories relating to model inputs
 
