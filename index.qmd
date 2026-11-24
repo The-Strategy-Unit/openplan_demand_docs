@@ -2,10 +2,44 @@
 title: "OpenPlan hospital demand model documentation"
 order: 1
 ---
+# Welcome to the OpenPlan hospital demand model documentation site.
 
-Welcome to the OpenPlan hospital demand model documentation site.
+The OpenPlan hospital demand model helps forecast future hospital demand in 
+England.
 
-:::{.callout-note}
+The model can be used by NHS Trusts, hospital planners, service designers and 
+those interested in the shift of activity from hospitals into the community.
+
+<br><br>
+
+:::{.callout-tip}
+
+<div style="font-size: 1.3em; line-height: 1.6;">
+
+[{{< fa arrows-alt >}} Model overview](/overview/model_summary.qmd) - For a high level overview of how the model works.
+
+[{{< fa crosshairs >}} Technical Zone](/technical/technical.qmd) - To dig deeper into the methods, data and code.
+
+[{{< fa play >}} Quick start guide](/quick_start/quick_start.qmd) - To understand how to run a model.
+
+[{{< fa bullhorn >}} Model changes](/news/news.qmd)  - Click on this link for the latest model news and developments.
+
+[{{< fa check-circle >}} Model assurance](/assurance/assurance.qmd) - Understand how the model promotes trust and auditability.
+
+[{{< fa question-circle >}} FAQs](/user_guide/FAQ.qmd) - Can't find what you're looking for? 
+Check the out our frequently asked questions.
+
+</div>
+:::
+
+<br><br>
+
+![Model summary](/resources/Demand%20and%20Capacity%20Model.png)
+
+<br><br>
+
+::: {.callout-caution}
+
 # The NHP model is now called the "OpenPlan hospital demand model"
 
 The Strategy Unit was originally commissioned by the New Hospital Programme to 
@@ -24,8 +58,3 @@ We have therefore made the decision to group these tools under the new heading
 We will refer to the existing NHP demand model as the 
 '**OpenPlan hospital demand model**' going forward.
 :::
-
-This site summarises the  methodology and software implementation of the model. 
-It will be kept up to date as development progresses, and old versions of the 
-documentation will be available in the version controlled GitHub repository on 
-which this project is being produced.

@@ -6,59 +6,76 @@ website:
   open-graph: true
   repo-url: https://github.com/The-Strategy-Unit/nhp_project_information
   repo-actions: [edit, issue]
-  title: "OpenPlan hospital demand model documentation"
+  title: "OpenPlan hospital demand model"
   description: "Documentation for the OpenPlan hospital demand model created by the Strategy Unit to support NHS England's New Hospital Programme"
   favicon: _assets/favicon.ico
   navbar:
     background: dark
     foreground: light
-    title: "OpenPlan hospital demand model documentation"
+    title: "OpenPlan hospital demand model <span style='background:white; color:black; padding:3px 9px; border-radius:20px; font-size:0.65em; font-weight:600; margin-left:6px;'>DOCS</span>"
     pinned: true
   sidebar:
     style: "floating"
     search: true
     collapse-level: 1
     contents:
-      - section: "Project overview"
+      
+      - text: 'Home'
+        href: index.qmd
+      - section: 'News'
+        href: news/news.qmd
         contents:
-          auto: project_plan_and_summary/*
-      - section: "Project roadmap"
+          - news/model_updates.qmd
+          - news/roadmap.qmd
+      - section: "User Guide"
         contents:
-          auto: roadmap/*
-      - section: "User guide"
+        - quick_start/quick_start.qmd
+        - user_guide/user_guide.qmd
+      - overview/model_summary.qmd
+      - section: "Key concept: TPMAs"
+        href: overview/TPMAs.qmd
         contents:
-          auto: user_guide/*
-      - section: "Modelling methodology"
+            - overview/tpmas_lookup.qmd
+            - overview/inpatient_tpmas.qmd
+            - overview/outpatient_tpmas.qmd
+            - overview/ae_tpmas.qmd
+      - overview/limitations.qmd
+      - section: "Assurance"
+        href: assurance/assurance.qmd
         contents:
-          - modelling_methodology/methodology.qmd
-          - modelling_methodology/demand_supply.qmd
-          - modelling_methodology/double_counting.qmd
-          - modelling_methodology/modelling_uncertainty.qmd
-          - modelling_methodology/non-demographic_growth.qmd
-          - section: "Types of Potentially Mitigatable Activity (TPMAs)"
+          - assurance/assumptions-log.qmd
+          - assurance/data_log.qmd
+      - section: "Technical zone"
+        href: technical/technical.qmd
+        contents:
+          - section: "Data preparation"
             contents:
-              - modelling_methodology/activity_mitigators/inpatient_activity_mitigators.qmd
-              - modelling_methodology/activity_mitigators/outpatient_activity_mitigators.qmd
-              - modelling_methodology/activity_mitigators/ae_activity_mitigators.qmd
-              - modelling_methodology/activity_mitigators/direct_standardisation_of_tpmas.qmd
-          - section: "Data quality"
+              - technical/data_extraction/data_extraction_overview.qmd
+              - technical/data_extraction/deriving_hospital_catchments.qmd
+              - technical/data_extraction/inpatients.qmd
+              - technical/data_extraction/outpatients.qmd
+              - technical/data_extraction/aae.qmd
+          - section: "Modelling methodology"
             contents:
-            - modelling_methodology/data_summary.qmd
-            - modelling_methodology/baseline_data_validation.qmd
-          - section: "Demographic modelling"
+              - technical/modelling_methodology/methodology.qmd
+              - technical/modelling_methodology/double_counting.qmd
+              - technical/modelling_methodology/modelling_uncertainty.qmd
+              - section: "Demographic growth"
+                href: technical/modelling_methodology/demographic_modelling/demographic_modelling.qmd
+                contents:
+                  - technical/modelling_methodology/demographic_modelling/modelling_utilisation_rates.qmd
+                  - technical/modelling_methodology/demographic_modelling/list_of_projections.qmd
+              - technical/modelling_methodology/non-demographic_growth.qmd
+              - technical/modelling_methodology/demand_supply.qmd
+              - overview/TPMAs.qmd      
+          - section: "Developer information" 
             contents:
-              - auto: modelling_methodology/demographic_modelling/*.qmd
-      - section: "Data extraction"
-        contents:
-          auto: data_extraction/*
-      - section: "Quality assurance"
-        contents:
-          auto: quality_assurance/*
+              - technical/developer/code.qmd
+      - user_guide/FAQ.qmd     
       - contact.qmd
   page-navigation: true
   page-footer:
     right: "[OpenPlan hospital demand model documentation](https://connect.strategyunitwm.nhs.uk/nhp/project_information/)© 2023 by [The Strategy Unit](https://www.strategyunitwm.nhs.uk/) is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)"
-    left: "This page is built using the [NHS-R Quarto theme](https://github.com/nhs-r-community/quarto-nhs-theme)."
 
 format:
   html:
